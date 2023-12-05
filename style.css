@@ -1,6 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto', sans-serif
 }
 /*Beginning of the header*/
 .header {
@@ -21,6 +23,9 @@ body {
     padding-left: 100px;
 }
 
+.left-content {
+    margin-top: 100px;
+}
 .logo {
     font-size: 24px;
     color: #F9FAF8;
@@ -39,6 +44,9 @@ body {
 button {
     background-color: #3882F6;
     color: #F9FAF8;
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 10px;
 }
 
 /* Right Header things */
@@ -63,4 +71,47 @@ button {
     background-color: gray;
     min-width: 100px;
     min-height: 75px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Section 2 */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random-info {
+    padding: 16px;
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.boxes-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.box {
+    width: 150px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue-box {
+    width: 150px;
+    height: 150px;
+    border: solid #3882F6 3px;
+    border-radius: 10px;
+}
+
+.blue-text {
+    align-self: center;
+    text-align: center;
 }
