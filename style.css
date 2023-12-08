@@ -2,35 +2,61 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 /*Beginning of the header*/
-.header {
-    background-color: #1F2937;
+.section1 {
     display: flex;
-    flex: 2;
     justify-content: center;
-    align-items: flex-start;
-    padding: 8px;
-    height: 100%;
+    background-color: #1F2937;
+    margin: 0;
 }
-/*Left header things*/
-.left-header {
+.header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 2;
-    padding-left: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 100px 100px 100px;
+    max-width: 1500px;
+    gap: 60px;
+
 }
 
-.left-content {
-    margin-top: 100px;
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 700;
+}
+.links {
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 400;
+    gap: 16px;
 }
 
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 500px;
+}
 .title {
     font-size: 48px;
     font-weight: extra-bold;
@@ -40,7 +66,6 @@ body {
     font-size: 18px;
     color: #E5E7EB;
 }
-
 button {
     background-color: #3882F6;
     color: #F9FAF8;
@@ -49,32 +74,19 @@ button {
     border-radius: 10px;
 }
 
-/* Right Header things */
-.right-header {
+.right-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex: 3;
-    padding-right: 100px;
-}
-
-.links {
-    display: flex;
-    font-size: 18px;
-    color: #E5E7EB;
-    align-self: flex-end;
-    gap: 8px;
+    flex: 3
 }
 
 .image {
     background-color: gray;
-    min-width: 100px;
-    min-height: 75px;
-    margin-top: 100px;
+    min-width: 450px;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#E5E7EB;
 }
 /* Section 2 */
 .section2 {
@@ -84,7 +96,7 @@ button {
 }
 
 .random-info {
-    padding: 16px;
+    margin: 30px;
     font-weight: 900;
     font-size: 36px;
     color: #1F2937;
@@ -93,15 +105,18 @@ button {
 .boxes-text {
     display: flex;
     align-items: center;
-    gap: 8px;
     flex-wrap: wrap;
+    padding-top: 0;
+    margin-top: 0;
 }
 .box {
     width: 150px;
-    margin: 50px;
+    margin: 30px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
 }
 
 .blue-box {
@@ -114,4 +129,82 @@ button {
 .blue-text {
     align-self: center;
     text-align: center;
+}
+
+/* Section 3 */
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 100px;
+    max-width: 1000px;
+}
+.quote {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+
+}
+.quote-attribution {
+    font-weight: 700;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+/* Section 4 */
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #3882F6;
+    max-width: 2000px;
+    padding: 30px 75px;
+    margin: 100px 100px;
+    border-radius: 10px;
+    
+}
+.left-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9FAF8;
+
+}
+.text2 {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.right-call button {
+    border: solid #F9FAF8 3px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 30px;
+    margin: 0;
 }
