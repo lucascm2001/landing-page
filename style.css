@@ -75,10 +75,6 @@ button {
     border: solid #3882F6 3px;
 }
 
-.right-content {
-    display: flex;
-    flex: 3
-}
 
 .image {
     background-color: gray;
